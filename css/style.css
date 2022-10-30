@@ -1,0 +1,30 @@
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+#logo {
+    height: 60px;
+    width: auto;
+}
+.logo-container {
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.shoping-cart {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
+    background-color: #eeecec
+}
+.shoping-cart:hover {
+    background-color: #dbd9d9;
+}
