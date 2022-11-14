@@ -1,30 +1,162 @@
+body {
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: hsl(211, 45%, 40%);
+    margin: 0;
+    height: 2000px;
+}
+
+/* Stylar navbaren*/
+nav {
+    margin: 27px auto 0;
+    position: relative;
+    width: fit-content;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 0;
+    font-size: 0;
+    border-radius: 20px;
+}
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-flex;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+/**/
+
+/*Sätter individuella bredden på alla länkar i navbaren*/
+a:nth-child(1){width: 90px;}
+a:nth-child(2){width: 140px;}
+a:nth-child(3){width: 110px;}
+a:nth-child(4){width: 130px;}
+a:nth-child(5){width: 160px;}
+/**/
+
+/*Animerar ".animation" div:en*/
+nav a:nth-child(1):hover~.animation {
+    width: 90px;
+    left: 0px;
+    background-color: #93ec4a;
+}
+nav a:nth-child(2):hover~.animation {
+    width: 140px;
+    left: 90px;
+    background-color: #e74c3c;
+}
+nav a:nth-child(3):hover~.animation {
+    width: 110px;
+    left: 230px;
+    background-color: #3498db;
+}
+nav a:nth-child(4):hover~.animation {
+    width: 130px;
+    left: 340px;
+    background-color: #9b59b6;
+}
+nav a:nth-child(5):hover~.animation {
+    width: 160px;
+    left: 470px;
+    background-color: #e67e22;
+}
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .25s ease 0s;
+    border-radius: 20px;
+}
+/**/
+
+/*färgar navbar:en och sidan mm*/
 .container-nav {
     display: flex;
     justify-content: space-between;
+    background: hsl(211, 45%, 23%);
+    box-shadow: 5px 5px 5px hsl(211, 45%, 23%), -5px -5px 5px hsl(211, 45%, 23%);
+    position: sticky;
+    top: 0;
 }
-#logo {
-    height: 60px;
-    width: auto;
-}
-.logo-container {
-    height: 50px;
-    width: auto;
+.page{
+    background: hsl(211, 45%, 27%);
+    box-shadow: 0 10px 10px hsl(211, 45%, 23%), 0 -10px 10px hsl(211, 45%, 23%);
+    width: 80%;
+    height: 2000px;
     display: flex;
-    align-items: center;
-    margin-top: 20px;
+    padding-top: 30px;
 }
+.page-container {
+    display: flex;
+    justify-content:center;
+}
+/**/
 
+/*Stylar loggan och shoping cart:en*/
+#logo{margin: 27px;}
 .shoping-cart {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    margin: 27px ;
+    background-color: #34495e;
+}
+.shoping-cart:hover {background-color: #800000}
+/**/
+
+
+.filters{
+    width: 15%;
+    height: 500px;
+    border-right: solid 2px #476d94;
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px 0 30px;
+    height: fit-content;
+    width: 85%;
+}
+.product-item{
+    width: 350px;
+    height: 250px;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-right: 30px;
-    background-color: #eeecec
+    margin: 20px;
+    background-color: hsl(0, 100%, 100%);
+    display: flex;
+    align-items: flex-end;
 }
-.shoping-cart:hover {
-    background-color: #dbd9d9;
+.product-item:hover{
+    cursor: pointer;
 }
+.product-description{
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    border-radius: 0 0 8px 8px;
+}
+
+/*stylar problem listan*/
+.problem-list-container{
+    padding-left: 20px;
+}
+.problem-list{
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 30px;
+}
+.problem-h2{
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 30px;
+}
+/**/
