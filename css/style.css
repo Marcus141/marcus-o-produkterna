@@ -81,13 +81,12 @@ nav .animation {
     display: flex;
     justify-content: space-between;
     background: hsl(211, 45%, 23%);
-    box-shadow: 5px 5px 5px hsl(211, 45%, 23%), -5px -5px 5px hsl(211, 45%, 23%);
     position: sticky;
     top: 0;
 }
 .page{
     background: hsl(211, 45%, 27%);
-    box-shadow: 0 10px 10px hsl(211, 45%, 23%), 0 -10px 10px hsl(211, 45%, 23%);
+    box-shadow: 0 10px 10px hsl(211, 45%, 15%), 0 -10px 10px hsl(211, 45%, 15%);
     width: 80%;
     height: 2000px;
     display: flex;
