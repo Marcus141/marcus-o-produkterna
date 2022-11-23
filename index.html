@@ -8,6 +8,7 @@
         <link rel="icon" type="image/x-icon" href="./image/favicon-32x32.png">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./js/slideshow.js" defer></script>
     </head> 
     <body>
         <div class="container-nav">
@@ -28,6 +29,19 @@
         </div>
         
         <div class="page">
+            <div class="slideshow">
+                <div class="image-container">
+                    <div id="slideshow-image1" class="slideshow-item" style="opacity: 1;"><img src="./image/Nvidia-GeForce-RTX-4080.png"></div>
+                    <div id="slideshow-image2" class="slideshow-item" style="opacity: 0;"><img src="./image/Nvidia4090.png"></div>
+                    <div id="slideshow-image3" class="slideshow-item" style="opacity: 0;"><img src="./image/AiGraph.png"></div>
+                    <div id="slideshow-image4" class="slideshow-item" style="opacity: 0;"><img src="./image/NvidiaChart.png"></div>
+                </div>
+                <div class=button-container>
+                    <button class="slideshow-button-left" onclick="prev()">Prev</button>
+                    <button class="slideshow-button-right" onclick="next()">Next</button>
+                </div>
+            </div>
         </div>
+        
     </body>
 </html>
