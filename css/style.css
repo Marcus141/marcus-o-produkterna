@@ -1,9 +1,10 @@
 body {
     font-size: 12px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: hsl(211, 45%, 40%);
+    background: hsl(0, 0%, 100%);
+    background-size: cover;
     margin: 0;
-    height: 2000px;
+    height: 1000px;
 }
 
 /* Stylar navbaren*/
@@ -80,21 +81,16 @@ nav .animation {
 .container-nav {
     display: flex;
     justify-content: space-between;
-    background: hsl(211, 45%, 23%);
+    background: rgba(0, 0, 0, 1);
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 .page{
-    background: hsl(211, 45%, 27%);
-    box-shadow: 0 10px 10px hsl(211, 45%, 15%), 0 -10px 10px hsl(211, 45%, 15%);
-    width: 80%;
-    height: 2000px;
+    width: auto;
+    height: inherit;
     display: flex;
     padding-top: 30px;
-}
-.page-container {
-    display: flex;
-    justify-content:center;
 }
 /**/
 
@@ -114,18 +110,14 @@ nav .animation {
 /**/
 
 
-.filters{
-    width: 15%;
-    height: 500px;
-    border-right: solid 2px #476d94;
-}
 
 .products-container{
     display: flex;
     flex-wrap: wrap;
     padding: 0 30px 0 30px;
     height: fit-content;
-    width: 85%;
+    width: 100%;
+    z-index: 1;
 }
 .product-item{
     width: 350px;
@@ -133,6 +125,7 @@ nav .animation {
     border-radius: 10px;
     margin: 20px;
     background-color: hsl(0, 100%, 100%);
+    box-shadow: 0 0 20px hsl(0, 0%, 64%);
     display: flex;
     align-items: flex-end;
 }
