@@ -12,9 +12,7 @@
     </head> 
     <body>
         <div class="container-nav">
-            <svg id="logo" width="50" height="50">
-                <circle cx="25" cy="25" r="23" stroke="green" stroke-width="2" fill="yellow" />
-            </svg>
+            <h1 class="company-name"></h1>
             <nav>
                 <a href="./index.html">             Hem          </a>
                 <a href="./html/products.html">     Produkter    </a>
@@ -33,12 +31,55 @@
                 <div class="image-container">
                     <div id="slideshow-image1" class="slideshow-item" style="opacity: 1;"><img src="./image/Nvidia-GeForce-RTX-4080.png"></div>
                     <div id="slideshow-image2" class="slideshow-item" style="opacity: 0;"><img src="./image/Nvidia4090.png"></div>
-                    <div id="slideshow-image3" class="slideshow-item" style="opacity: 0;"><img src="./image/AiGraph.png"></div>
+                    <div id="slideshow-image3" class="slideshow-item" style="opacity: 0;"><img src="./image/Slide2.png"></div>
                     <div id="slideshow-image4" class="slideshow-item" style="opacity: 0;"><img src="./image/NvidiaChart.png"></div>
                 </div>
                 <div class=button-container>
                     <button class="slideshow-button-left" onclick="prev()">Prev</button>
                     <button class="slideshow-button-right" onclick="next()">Next</button>
+                </div>
+            </div>
+            <h1>Rekomenderat</h1>
+            <div class="recomended-container">
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                    <div class="recomended-item">
+                        <img src="./image/Nvidia2080.png">
+                        <h3>RTX 2080</h3>
+                        <h3>€499</h3>
+                        <div class="starRating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <button class="buy-button">Lägg till i varukorg</button>
+                    </div>
+                    <div class="recomended-item">
+                        <img src="./image/Nvidia1060.png">
+                        <h3>GTX 1060</h3>
+                        <h3>€299</h3>
+                        <div class="starRating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <button class="buy-button">Lägg till i varukorg</button>
+                    </div>
+                    <div class="recomended-item">
+                        <img src="./image/Nvidia4090.png" style="width: 300px;">
+                        <h3>RTX 4090</h3>
+                        <h3>€1600</h3>
+                        <div class="starRating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <button class="buy-button">Lägg till i varukorg</button>
+                    </div>
                 </div>
             </div>
         </div>
