@@ -1,19 +1,19 @@
 body {
     font-size: 12px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: hsl(0, 0%, 70%);
+    background: hsl(0, 0%, 50%);
     background-size: cover;
     margin: 0;
     height: 1000px;
 }
 
-/* Stylar navbaren*/
+/* Stylar navbaren _____________________________________________________________________________________________*/
 nav {
     margin: 27px auto 0;
     position: relative;
     width: fit-content;
     height: 50px;
-    background-color: #34495e;
+    background-color: hsl(0, 0%, 20%);
     border-radius: 0;
     font-size: 0;
     border-radius: 20px;
@@ -31,17 +31,17 @@ nav a {
     color: white;
     cursor: pointer;
 }
-/**/
+/*_____________________________________________________________________________________________________________*/
 
-/*Sätter individuella bredden på alla länkar i navbaren*/
+/*Sätter individuella bredden på alla länkar i navbaren________________________________________________________*/
 a:nth-child(1){width: 90px;}
 a:nth-child(2){width: 140px;}
 a:nth-child(3){width: 110px;}
 a:nth-child(4){width: 130px;}
 a:nth-child(5){width: 160px;}
-/**/
+/*_____________________________________________________________________________________________________________*/
 
-/*Animerar ".animation" div:en*/
+/*Animerar ".animation" div:en och sätter färgen beroende på vilken A länk man håller över ____________________*/
 nav a:nth-child(1):hover~.animation {
     width: 90px;
     left: 0px;
@@ -75,9 +75,9 @@ nav .animation {
     transition: all .25s ease 0s;
     border-radius: 20px;
 }
-/**/
+/*_____________________________________________________________________________________________________________*/
 
-/*färgar navbar:en och sidan mm*/
+/*Justerar generella layouten av navbaren och resten av sidan med flexbox samt sätter färg på navbaren ________*/
 .container-nav {
     display: flex;
     justify-content: space-between;
@@ -91,14 +91,12 @@ nav .animation {
     height: inherit;
     display: flex;
     flex-direction: column;
-    position: relative;
 }
-/**/
+/*_____________________________________________________________________________________________________________*/
 
-/*Stylar namnet och shoping carten*/
+/*Stylar namnet och shoping carten ____________________________________________________________________________*/
 .company-name{
-    top: 27;
-    left: 27;
+    margin: 27px;
     color: hsl(0, 100%, 100%);
 }
 .shoping-cart {
@@ -109,10 +107,10 @@ nav .animation {
     align-items: center;
     border-radius: 20px;
     margin: 27px ;
-    background-color: #34495e;
+    background-color: hsl(0, 0%, 20%);
 }
 .shoping-cart:hover {background-color: #b60303}
-/**/
+/*_____________________________________________________________________________________________________________*/
 
 
 
@@ -123,40 +121,28 @@ nav .animation {
     height: fit-content;
     width: 100%;
     z-index: 1;
+    margin-top: 30px;
 }
-.product-item{
-    width: 350px;
-    height: 250px;
-    border-radius: 10px;
-    margin: 20px;
-    background-color: hsl(0, 100%, 100%);
-    box-shadow: 0 0 20px hsl(0, 0%, 64%);
-    display: flex;
-    align-items: flex-end;
-}
-.product-item:hover{cursor: pointer;}
-.product-description{
-    width: 100%;
-    height: 30%;
-    background-color: black;
-    border-radius: 0 0 8px 8px;
+.buy-button{
+    background-color: hsl(123, 98%, 43%);
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 7px;
+    padding: 4px;
 }
 
-/*stylar problem listan*/
-.problem-list-container{
-    padding-left: 20px;
-}
-.problem-list{
-    color: rgba(255, 255, 255, 0.87);
-    font-size: 30px;
-}
-.problem-h2{
-    color: rgba(255, 255, 255, 0.87);
-    font-size: 30px;
-}
-/**/
 
-/* Stylar slide showen */
+
+
+/*stylar problem listan ________________________________________________________________________________________*/
+.problem-list-container{padding-left: 20px;}
+.problem-list{color: rgba(255, 255, 255, 0.87);font-size: 30px;}
+.problem-h2{color: rgba(255, 255, 255, 0.87);font-size: 30px;}
+/*______________________________________________________________________________________________________________*/
+
+
+
+
+/* Stylar slideshowen och knapparna för att ändra bild _________________________________________________________*/
 .slideshow{
     display: flex;
     flex-direction: column;
@@ -175,6 +161,7 @@ nav .animation {
     min-width: 100%;
     max-width: 100%;
     width: 100vmax;
+    max-height: 1000px;
 }
 .button-container{
     display: flex;
@@ -184,7 +171,8 @@ nav .animation {
     height: fit-content;
 
 }
-/*  */
+/* Fixar slideshow knapparna till vänster och höger samt ger bakgrunden och texter en färg.
+ Sätter också z-index till 10 för att se till att knapparna är över bilderna */
 .slideshow-button-left{
     position: absolute;
     width: 100px;
@@ -217,12 +205,13 @@ nav .animation {
 .slideshow-button-right:hover{
     cursor: pointer;
 }
-/**/
+/* _____________________________________________________________________________________________________________*/
+
 
 .recomended-container{
     margin-top: 1000px;
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 .recomended-item{
     background-color: hsl(0, 0%, 87%);
@@ -230,4 +219,33 @@ nav .animation {
     width: fit-content;
     height: fit-content;
     padding: 20px;
+    height: 350px;
+    margin: 20px;
+    box-shadow: 0 0 20px hsl(0, 0%, 20%);
+}
+.recomended-h1{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 2px hsl(0, 0%, 80%)
+}
+
+.footer{
+    width: 100%;
+    min-height: 300px;
+    color: hsl(0, 0%, 77%);
+    background-color: hsl(0, 0%, 20%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.support > p {
+    font-size: 16px;
+}
+
+.contact-container{
+    font-size: 25px;
+}
+.about-container{
+    font-size: 25px;
+    height: 500px;
 }
